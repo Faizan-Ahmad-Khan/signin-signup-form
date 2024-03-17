@@ -33,17 +33,4 @@ function showSignupForm() {
     document.getElementById('accountIcon').style.display = 'block';
 }
 
-function checkLogin() {
-    let username = "myemail";
-    let userPassword = "mypass";
-    let userPasswordcheck = document.getElementById("signInPass").value;
-    let usernamecheck =  document.getElementById("signInUser").value;
-    if(userPassword === userPasswordcheck && username === usernamecheck)  {
-        alert("Login successfully");
-    } else {
-        alert("Invalid email or password");    
-    }
-    document.getElementById("signInUser").value = "";
-    document.getElementById("signInPass").value = "";
-}
 
