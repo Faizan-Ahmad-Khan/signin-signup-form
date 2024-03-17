@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icons8-account-28.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <h1 id="signin-heading">Welcome!</h1>
+        <p id="signInHeadPara"> Sign in to your account</p>
+        <img src="assets/icons8-account-28.png" alt="img" id="accountIcon" style="display:none;" width="35px">
+        <h1 id="signup-heading" style="display:none;">Create account!</h1>
+
+        <div class="button-group">
+            <button onclick="showSigninForm()" class="head-btn">Login</button>
+            <button onclick="showSignupForm()" class="head-btn">Signup</button>
+        </div>
+
+        <div id="formContainer">
+            <form id="signinForm">
+                <input type="text" placeholder="Email" required id="signInUser">
+                <input type="password" placeholder="Password" required id="signInPass">
+                <button type="submit" onclick="checkLogin()">Login</button>
+            </form>
+        </div>
+
+        <p id="firstPara" style="display:none;">Already have an account? <a href="#"
+                onclick="showSigninForm()">Login</a></p>
+        <p id="secondPara">Create an account? <a href="#" onclick="showSignupForm()">Signup</a>
+        </p>
+
+        <hr style="opacity: 0.2;">
+
+        <div class="social-icons">
+            <a href="https://shorturl.at/cqtIQ" target="_blank"> <img src="./Assets/icons8-google-logo-48.png"
+                    alt="logo" width="40px"></a>
+            <a href="https://pk.linkedin.com/" target="_blank"> <img src="./Assets/icons8-linkedin-100.png" alt="logo"
+                    width="40px"></a>
+            <a href="https://www.facebook.com/" target="_blank"> <img src="./Assets/icons8-facebook-100.png" alt="logo"
+                    width="40px"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
