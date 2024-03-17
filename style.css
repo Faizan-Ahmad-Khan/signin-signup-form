@@ -38,7 +38,7 @@ h1 {
   width: 150px;
   border-radius: 8px;
   font-size: 15px;
-  outline: none;
+  border: 1px solid #b5bcb6;
 }
 
 .button-group button:hover {
@@ -57,11 +57,13 @@ form button {
   padding: 6px;
   border-radius: 9px;
   font-size: 16px;
-  outline: none;
+  border: 1px solid #b5bcb6;
 }
 
 form button:hover {
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 input {
